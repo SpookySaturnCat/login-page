@@ -3,7 +3,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 outline:0;
-font-family: "Helvetica", sans-serif;
+font-family: "Verdana", sans-serif;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
   }
   .top-nav {
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     /* makes the elements center
        need both lines below for this*/
     display: table;
