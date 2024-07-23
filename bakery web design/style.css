@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,3 +10,277 @@ body {
     min-height: 100vh;
     background: #E7DECD;
 }
+
+.top-display-parent {
+    background: #3B3D30;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+}
+
+.resize {
+    width: 100px;
+    height: auto;
+}
+
+.top-display-child {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-display-child h1 {
+    color: #E5BDB5;
+    text-shadow: #0d0e0a 1px 0 10px;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+
+.nav-bar a {
+    text-align: center;
+    padding: 17px 17px;
+    text-decoration: none;
+    color: #E5BDB5;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.nav-bar a:hover {
+    background-color: #7D7671;
+}
+
+.left-nav-bar {
+    padding: 13px 13px;
+    display:bock;
+    flex-direction: row;
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.intro-page-welcome-container {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);  
+    z-index: 1;
+}
+
+.intro-page-welcome-container button {
+    padding: 5px;
+    border-radius: 28px;
+    border-color: transparent;
+    cursor: pointer;
+    display: block;
+    margin: 5px auto 0px auto;
+    width: 11vw;
+    height: 4.5vw;
+    font-size: 1.5vw;
+    background-color: #E5BDB5;
+    color: #3B3D30;
+}
+
+.intro-page-welcome-container button:hover {
+    background-color: #d1ada6;
+}
+    
+.overlay-text {
+    color: #E5BDB5; 
+    padding: 10px 20px; 
+    text-shadow: #0d0e0a 2.0px 2.0px 15px;
+}
+
+.overlay-text h6 {
+    font-size: 1.2vw;
+}
+
+.overlay-text p {
+    font-size: 2vw;
+}
+
+.icon-display {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 9vw;
+    padding-bottom: 9vw;
+}
+
+.large-shopping-container {
+    background-color: #f1f1f1;
+    padding: 3vw 4vw 2vw 4vw;
+}
+
+.large-shopping-container h2 {
+    text-align: center;
+    padding-bottom: 2vw;
+}
+
+.small-shopping-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adds space between the containers */
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    white-space: nowrap; /* Prevents wrapping to the next line */
+    margin: 0 auto;
+}
+
+.resize-shopping {
+    width: 16vw;
+    height: auto;
+    border-radius: 5%;
+    border: .5px;
+    display: block;
+    margin: auto;
+    padding-bottom: 2vw;
+}
+
+.individual-shopping-container {
+    flex: 0 0 auto; /* Prevents the flex items from shrinking */
+    width: 20vw;
+    border-radius: 5%;
+    background-color: #faf8f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    font-size: 1.25vw;
+}
+
+.individual-shopping-container p {
+    font-size: 1vw;
+}
+
+
+.price-and-order {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.price-and-order button {
+    padding: 2px;
+    border-radius: 28px;
+    border-color: transparent;
+    cursor: pointer;
+    display: block;
+    width: 9vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    background-color: #3B3D30;
+    color: #f1f1f1;
+}
+
+.price-and-order button:hover {
+    background: #1c1d17; 
+}
+
+.price-and-order p {
+    font-size: 2vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3B3D30; 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1c1d17; 
+}
+
+  /* .about-us-child {
+    position: absolute;
+    top: 430%;
+    left: 40%;
+    z-index: 2;
+    color:rgb(0, 0, 0);
+} 
+    .about-us-child h2{
+        font-size: 3vw;
+    }
+ */
+
+ .locations-img {
+    width: 18vw;
+    height: 18vw;
+    margin: auto;
+    border: 5px solid #3B3D30;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+ }
+
+ .locations h1 {
+    font-size:2.5vw;
+    text-align: center;
+    padding: 2vw;
+ }
+
+ .locations-child {
+    flex: 0 0 auto;
+    width: 20vw;
+    border-radius: 5%;
+    background-color: #faf8f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    overflow: hidden;
+    font-size: 1.25vw;
+}
+
+.locations-child:hover {
+    transform: scale(1.1);
+}
+
+.locations-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw; /* Adds space between the containers */
+    margin: auto;
+    padding-bottom: 4vw;;
+}
+
+.locations-container h3 {
+    text-align: center;
+    padding: 2vw 0 1vw 0;
+}
+
+.locations-container p {
+    text-align: center;
+    padding-bottom: 2vw;
+}
+
+.locations-container button {
+    border-radius: 28px;
+    border-color: transparent;
+    cursor: pointer;
+    display: block;
+    width: 9.3vw;
+    height: 2.7vw;
+    font-size: 1.3vw;
+    background-color: #3B3D30;
+    color: #faf8f4;
+    padding: 0px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.locations-container button:hover {
+    background: #1c1d17; 
+}
+
+ 
+ 
