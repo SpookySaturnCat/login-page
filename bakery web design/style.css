@@ -105,11 +105,13 @@ body {
 }
 
 .small-shopping-container {
+    width: 90%;
     display: flex;
     flex-direction: row;
     gap: 20px; /* Adds space between the containers */
     overflow-x: auto; /* Allows horizontal scrolling if needed */
     white-space: nowrap; /* Prevents wrapping to the next line */
+    margin: 0 auto;
 }
 
 .resize-shopping {
@@ -124,12 +126,16 @@ body {
 
 .individual-shopping-container {
     flex: 0 0 auto; /* Prevents the flex items from shrinking */
-    width: 22vw;
+    width: 20vw;
     border-radius: 5%;
     background-color: #faf8f4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     overflow: hidden;
+}
+
+.individual-shopping-container {
+    font-size: 1.25vw;
 }
 
 .individual-shopping-container p {
@@ -159,3 +165,23 @@ body {
 .price-and-order p {
     font-size: 2vw;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3B3D30; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1c1d17; 
